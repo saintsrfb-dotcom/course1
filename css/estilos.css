@@ -1,0 +1,28 @@
+:root {
+    --color-primario: #222831;
+    --color-secundario: #393E46;
+    --color-terciario: #00ADB5;
+    --color-blanco: #EEEEEE;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Afacad Flux", serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primario);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--color-blanco);
+}
+
+.titulo span {
+    font-size: 2rem;
+    color: var(--color-terciario);
+}
