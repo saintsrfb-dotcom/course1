@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <!-- link: Enlace a hoja de estilos, con atributos para cargar más rapido la hoja de estilo "preload" -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
@@ -20,25 +23,27 @@
         <h1 class="titulo">Roberto Beteta <span>Freelancer</span></h1>
     </header>
 
-    <!-- nav: Navegación -->
-    <nav>
-        <!-- a: Enlace y atributo "href" que indexa o enlaza otras paginas -->
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav_bg">
+        <nav class="nav_principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
     <!-- img: Para agregar imagen con atributos "src" la ruta que se encuentra y "alt" para agregar descripcion -->
 
     <!-- section: Secciones -->
-    <section>
-        <!-- h2: Texto secundario, se puede repetir, encabezado menor -->
-        <h2>Diseño y Desarrollo Web</h2>
-        <!-- p: Párrafo -->
-        <img src="img/pin.png" alt="">
-        <p>Managua, Nicaragua</p>
-        <a href="#">Contactar</a>
+    <section class="hero">
+        <div class="contenido-hero">
+            <!-- h2: Texto secundario, se puede repetir, encabezado menor -->
+            <h2>Diseño y Desarrollo Web</h2>
+            <!-- p: Párrafo -->
+            <img src="img/pin.png" alt="">
+            <p>Managua, Nicaragua</p>
+            <a href="#">Contactar</a>
+        </div>
     </section>
     
     <!-- main: Contenido principal de la página -->

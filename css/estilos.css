@@ -6,27 +6,101 @@
 }
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
     font-family: "Afacad Flux", serif;
     font-size: 16px;
-    margin: 0;
-    padding: 0;
     background-color: var(--color-primario);
 }
 
+h1 {
+    font-size: 3.8rem;
+}
+
 h2 {
-    color: var(--color-blanco);
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
 }
 
 .titulo {
     text-align: center;
-    font-size: 3.8rem;
     color: var(--color-blanco);
 }
 
 .titulo span {
     font-size: 2rem;
     color: var(--color-terciario);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav_bg {
+    background-color: var(--color-secundario);
+}
+
+.nav_principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_principal a{
+    color: var(--color-blanco);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.nav_principal a:hover{
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+}
+
+@media (min-width: 480px){
+
+}
+
+@media (min-width: 768px){
+    .nav_principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.578);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2, .contenido-hero p {
+    color: var(--color-blanco);
+    text-align: center;
 }
