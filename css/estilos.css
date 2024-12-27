@@ -31,7 +31,7 @@ h3 {
     font-size: 1.8rem;
 }
 
-.titulo {
+h1, h2, h3 {
     text-align: center;
     color: var(--color-blanco);
 }
@@ -44,6 +44,20 @@ h3 {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+}
+
+.boton {
+    background-color: var(--color-blanco);
+    text-decoration: none;
+    color: var(--color-primario);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .7rem;
+    width: 90%;
+    text-align: center;
 }
 
 .nav_bg {
@@ -79,6 +93,10 @@ h3 {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .boton {
+        width: auto;
+    }
 }
 
 .hero {
@@ -103,4 +121,9 @@ h3 {
 .contenido-hero h2, .contenido-hero p {
     color: var(--color-blanco);
     text-align: center;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
 }
